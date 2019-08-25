@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+$bDate = "1979-12-12";
+$toDate = date("Y-m-d");
+
+$bTime = strtotime($bDate);
+$toTime = strtotime($toDate);
+
+$totalsecs = $bTime - $toTime;
+$totalDays = floor($totalsecs / 3600 / 24);
+
+echo "bDate : $totalDays\n";
